@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="container mx-auto p-2 h-screen items-center flex justify-center">
+      <form id="form" class="border border-2 border-gray p-5 rounded-xl">
+        <input
+          class="p-3 border border-2 border-gray-100 mr-2 focus:outline-red-300 rounded"
+          id="input"
+          type="number"
+          placeholder="Summani kiriting !"
+        />
+        <select class="border border-2 border-gray p-3 mr-2 rounded" id="select">
+          <option value="USD">USD</option>
+          <option value="YEVRO">YEVRO</option>
+          <option value="RUBL">RUBL</option>
+          <option value="DINOR">DINOR</option>
+        </select>
+        <input
+          id="total"
+          class="p-3 border border-2 border-gray-100 mr-2 focus:outline-none rounded"
+          type="number"
+          placeholder="0 uzs"
+          readonly
+        />
+
+        <button class="bg-red-500 px-4 py-3 text-white rounded" type="submit" id="button">O'girish</button>
+      </form>
+    </div>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
